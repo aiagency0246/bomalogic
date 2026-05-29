@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/bomalogic/',
+  base: '/',
   build: {
     assetsInlineLimit: 4096, // Inline small assets as base64
     rollupOptions: {
