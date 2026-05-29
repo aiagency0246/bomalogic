@@ -237,7 +237,7 @@ function App() {
       <div className="page-shell">
         <header className="topbar">
           <a className="brand" href={routeToHash("home")} aria-label="BOMALOGIC home">
-            <img src="./logo-light.png" alt="BOMALOGIC AUTOMATION" loading="eager" />
+            <img src="./logo-light.png" alt="BOMALOGIC AUTOMATION" loading="eager" width="200" height="50" />
           </a>
           <nav className="nav">
             <a href={routeToHash("home")}>Home</a>
@@ -316,7 +316,7 @@ function App() {
       <div className="page-shell">
         <header className="topbar">
           <a className="brand" href={routeToHash("home")} aria-label="BOMALOGIC home">
-            <img src="./logo-light.png" alt="BOMALOGIC AUTOMATION" loading="eager" />
+            <img src="./logo-light.png" alt="BOMALOGIC AUTOMATION" loading="eager" width="200" height="50" />
           </a>
           <nav className="nav">
             <a href={routeToHash("home")}>Home</a>
@@ -348,6 +348,8 @@ function App() {
                   alt="AI support assistant at a laptop"
                   loading="lazy"
                   decoding="async"
+                  width="500"
+                  height="350"
                 />
               </div>
 
@@ -411,6 +413,8 @@ function App() {
                 alt="AI assistant working at a desk"
                 loading="eager"
                 fetchPriority="high"
+                width="600"
+                height="400"
               />
               <div className="hero-badge">
                 <span>24/7 response support</span>
@@ -459,6 +463,8 @@ function App() {
                 alt="Professional reviewing a tablet next to an AI robot"
                 loading="lazy"
                 decoding="async"
+                width="500"
+                height="350"
               />
             </div>
           </div>
@@ -486,6 +492,8 @@ function App() {
                 alt="Specialist monitoring AI systems"
                 loading="lazy"
                 decoding="async"
+                width="500"
+                height="350"
               />
             </div>
             <div className="process-steps">
@@ -509,6 +517,8 @@ function App() {
               alt="Support and operations staff working on automation systems"
               loading="lazy"
               decoding="async"
+              width="800"
+              height="400"
             />
             <div className="ops-overlay">
               <p className="eyebrow">Managed operations</p>
@@ -650,6 +660,8 @@ function App() {
                 alt="Team reviewing AI-driven deployment planning on a tablet"
                 loading="lazy"
                 decoding="async"
+                width="400"
+                height="300"
               />
               <div className="sidebar-copy">
                 <p className="eyebrow">What happens next</p>
