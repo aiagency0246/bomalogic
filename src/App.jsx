@@ -237,7 +237,7 @@ function App() {
       <div className="page-shell">
         <header className="topbar">
           <a className="brand" href={routeToHash("home")} aria-label="BOMALOGIC home">
-            <img src="/logo-light.png" alt="BOMALOGIC AUTOMATION" loading="eager" />
+            <img src="./logo-light.png" alt="BOMALOGIC AUTOMATION" loading="eager" />
           </a>
           <nav className="nav">
             <a href={routeToHash("home")}>Home</a>
@@ -316,7 +316,7 @@ function App() {
       <div className="page-shell">
         <header className="topbar">
           <a className="brand" href={routeToHash("home")} aria-label="BOMALOGIC home">
-            <img src="/logo-light.png" alt="BOMALOGIC AUTOMATION" loading="eager" />
+            <img src="./logo-light.png" alt="BOMALOGIC AUTOMATION" loading="eager" />
           </a>
           <nav className="nav">
             <a href={routeToHash("home")}>Home</a>
@@ -344,7 +344,7 @@ function App() {
             <div className="faq-layout">
               <div className="faq-image">
                 <img
-                  src="/support-staff.jpg"
+                  src="./support-staff.jpg"
                   alt="AI support assistant at a laptop"
                   loading="lazy"
                   decoding="async"
@@ -407,7 +407,7 @@ function App() {
 
             <div className="hero-media">
               <img
-                src="/hero-robot.jpg"
+                src="./hero-robot.jpg"
                 alt="AI assistant working at a desk"
                 loading="eager"
                 fetchPriority="high"
@@ -455,7 +455,7 @@ function App() {
             </div>
             <div className="editorial-image">
               <img
-                src="/human-ai-collab.jpg"
+                src="./human-ai-collab.jpg"
                 alt="Professional reviewing a tablet next to an AI robot"
                 loading="lazy"
                 decoding="async"
@@ -482,7 +482,7 @@ function App() {
           <div className="process-layout">
             <div className="process-image">
               <img
-                src="/ai-monitoring.jpg"
+                src="./ai-monitoring.jpg"
                 alt="Specialist monitoring AI systems"
                 loading="lazy"
                 decoding="async"
@@ -505,7 +505,7 @@ function App() {
         <section className="section section-ops">
           <div className="ops-banner">
             <img
-              src="/support-ops.jpg"
+              src="./support-ops.jpg"
               alt="Support and operations staff working on automation systems"
               loading="lazy"
               decoding="async"
@@ -646,7 +646,7 @@ function App() {
 
             <aside className="deployment-sidebar">
               <img
-                src="/deployment-planning.jpg"
+                src="./deployment-planning.jpg"
                 alt="Team reviewing AI-driven deployment planning on a tablet"
                 loading="lazy"
                 decoding="async"
@@ -728,7 +728,7 @@ function App() {
           <div className="contact-layout">
             <div className="contact-image">
               <img
-                src="/support-staff.jpg"
+                src="./support-staff.jpg"
                 alt="AI support assistant working at a laptop"
                 loading="lazy"
                 decoding="async"
