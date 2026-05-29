@@ -342,15 +342,11 @@ function App() {
             </div>
 
             <div className="faq-layout">
-              <div className="faq-image">
-                <img
-                  src="./support-staff.webp"
-                  alt="AI support assistant at a laptop"
-                  loading="lazy"
-                  decoding="async"
-                  width="500"
-                  height="350"
-                />
+              <div className="faq-visual-design">
+                <div className="support-interface">
+                  <div className="chat-bubble"></div>
+                  <div className="ai-response"></div>
+                </div>
               </div>
 
               <div className="faq-list">
@@ -408,17 +404,22 @@ function App() {
             </div>
 
             <div className="hero-media">
-              <img
-                src="./hero-robot.webp"
-                alt="AI assistant working at a desk"
-                loading="eager"
-                fetchPriority="high"
-                width="600"
-                height="400"
-              />
-              <div className="hero-badge">
-                <span>24/7 response support</span>
-                <strong>Lead capture, support triage, reminders, and reporting</strong>
+              <div className="ai-visual-design">
+                <div className="ai-network">
+                  <div className="node node-1"></div>
+                  <div className="node node-2"></div>
+                  <div className="node node-3"></div>
+                  <div className="node node-4"></div>
+                  <div className="node node-5"></div>
+                  <div className="connection conn-1"></div>
+                  <div className="connection conn-2"></div>
+                  <div className="connection conn-3"></div>
+                  <div className="connection conn-4"></div>
+                </div>
+                <div className="ai-badge">
+                  <span>24/7 response support</span>
+                  <strong>Lead capture, support triage, reminders, and reporting</strong>
+                </div>
               </div>
             </div>
           </div>
@@ -458,14 +459,11 @@ function App() {
               </p>
             </div>
             <div className="editorial-image">
-              <img
-                src="./human-ai-collab.webp"
-                alt="Professional reviewing a tablet next to an AI robot"
-                loading="lazy"
-                decoding="async"
-                width="500"
-                height="350"
-              />
+              <div className="ai-collaboration-design">
+                <div className="human-element"></div>
+                <div className="ai-element"></div>
+                <div className="data-flow"></div>
+              </div>
             </div>
           </div>
 
@@ -487,14 +485,11 @@ function App() {
 
           <div className="process-layout">
             <div className="process-image">
-              <img
-                src="./ai-monitoring.webp"
-                alt="Specialist monitoring AI systems"
-                loading="lazy"
-                decoding="async"
-                width="500"
-                height="350"
-              />
+              <div className="ai-monitoring-design">
+                <div className="dashboard"></div>
+                <div className="data-stream"></div>
+                <div className="analytics"></div>
+              </div>
             </div>
             <div className="process-steps">
               {workflowSteps.map((step) => (
@@ -512,21 +507,16 @@ function App() {
 
         <section className="section section-ops">
           <div className="ops-banner">
-            <img
-              src="./support-ops.webp"
-              alt="Support and operations staff working on automation systems"
-              loading="lazy"
-              decoding="async"
-              width="800"
-              height="400"
-            />
-            <div className="ops-overlay">
-              <p className="eyebrow">Managed operations</p>
-              <h2>Support, maintenance, and oversight stay part of the service</h2>
-              <p>
-                Every deployment is designed with monitoring, troubleshooting, and escalation in
-                mind so your team stays in control as the system works in the background.
-              </p>
+            <div className="ops-visual-design">
+              <div className="ops-grid"></div>
+              <div className="ops-overlay">
+                <p className="eyebrow">Managed operations</p>
+                <h2>Support, maintenance, and oversight stay part of the service</h2>
+                <p>
+                  Every deployment is designed with monitoring, troubleshooting, and escalation in
+                  mind so your team stays in control as the system works in the background.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -655,14 +645,10 @@ function App() {
             </form>
 
             <aside className="deployment-sidebar">
-              <img
-                src="./deployment-planning.webp"
-                alt="Team reviewing AI-driven deployment planning on a tablet"
-                loading="lazy"
-                decoding="async"
-                width="400"
-                height="300"
-              />
+              <div className="deployment-visual-design">
+                <div className="planning-grid"></div>
+                <div className="workflow-diagram"></div>
+              </div>
               <div className="sidebar-copy">
                 <p className="eyebrow">What happens next</p>
                 <h3>Review, scope, and deployment planning</h3>
@@ -738,13 +724,14 @@ function App() {
           </div>
 
           <div className="contact-layout">
-            <div className="contact-image">
-              <img
-                src="./support-staff.jpg"
-                alt="AI support assistant working at a laptop"
-                loading="lazy"
-                decoding="async"
-              />
+            <div className="contact-visual-design">
+              <div className="connection-nodes">
+                <div className="node center"></div>
+                <div className="node top"></div>
+                <div className="node right"></div>
+                <div className="node bottom"></div>
+                <div className="node left"></div>
+              </div>
             </div>
 
             <div className="contact-panels">
