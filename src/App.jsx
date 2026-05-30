@@ -415,6 +415,10 @@ function App() {
                   <div className="connection conn-2"></div>
                   <div className="connection conn-3"></div>
                   <div className="connection conn-4"></div>
+                  <div className="data-particle particle-1"></div>
+                  <div className="data-particle particle-2"></div>
+                  <div className="data-particle particle-3"></div>
+                  <div className="data-particle particle-4"></div>
                 </div>
                 <div className="ai-badge">
                   <span>24/7 response support</span>
