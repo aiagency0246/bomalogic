@@ -151,7 +151,7 @@ const initialForm = {
   phone: "",
   teamSize: "1-5",
   timeline: "2-4 weeks",
-  goals: [useCases[0]],
+  selectedPlan: "Starter Tier",
   notes: ""
 };
 
@@ -180,8 +180,8 @@ function buildRequestText(form) {
     `Team size: ${form.teamSize}`,
     `Timeline: ${form.timeline}`,
     "",
-    "Automation goals:",
-    ...(form.goals.length > 0 ? form.goals.map((goal) => `- ${goal}`) : ["- Not provided"]),
+    "Selected plan:",
+    `- ${form.selectedPlan}`,
     "",
     "Workflow notes:",
     form.notes?.trim() || "Not provided"
@@ -194,20 +194,6 @@ function App() {
 
   const route = getRoute();
   const page = route === "faq" || route === "pricing" ? route : "home";
-
-  function toggleValue(key, value) {
-    setForm((current) => {
-      const exists = current[key].includes(value);
-      const nextValues = exists
-        ? current[key].filter((item) => item !== value)
-        : [...current[key], value];
-
-      return {
-        ...current,
-        [key]: nextValues.length > 0 ? nextValues : [value]
-      };
-    });
-  }
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -609,22 +595,12 @@ function App() {
               </div>
 
               <div className="field-group">
-                <span className="field-label">What should the system automate?</span>
-                <div className="choice-grid">
-                  {useCases.map((item) => (
-                    <button
-                      className={`choice-chip ${form.goals.includes(item) ? "selected" : ""}`}
-                      key={item}
-                      onClick={(event) => {
-                        event.preventDefault();
-                        toggleValue("goals", item);
-                      }}
-                      type="button"
-                    >
-                      {item}
-                    </button>
-                  ))}
-                </div>
+                <label htmlFor="selectedPlan">Choose your preferred plan</label>
+                <select id="selectedPlan" name="selectedPlan" value={form.selectedPlan} onChange={handleChange}>
+                  <option>Starter Tier</option>
+                  <option>Business Tier</option>
+                  <option>Premium Tier</option>
+                </select>
               </div>
 
               <div className="field-group">
